@@ -1,3 +1,4 @@
+import arrays.BinarySearch
 import arrays.ContainsDuplicate
 import arrays.TwoSum
 import arrays.ValidParentheses
@@ -5,7 +6,7 @@ import arrays.ValidParentheses
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    validParentheses()
+    printBinarySearch()
 
 }
 fun printTwoSumResult(){
@@ -25,4 +26,9 @@ fun printContainsDuplicate(){
 fun validParentheses(){
     val result = ValidParentheses().validParentheses("({[})")
     print("Resultado $result")
+}
+
+fun printBinarySearch(){
+    val result = BinarySearch().searchInsert(intArrayOf(1,3,5,6), 2)
+    print(("Resultado $result"))
 }
